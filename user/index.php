@@ -15,8 +15,12 @@ include('plugins/connect.php');
 	<title>Budget Mart</title>
 	
 	 <link rel="stylesheet" type="text/css" href="plugins/style.css">
+<<<<<<< HEAD
     <script type="text/javascript" src="plugins/jquery-3.3.1.slim.js"></script>
 <script type="text/javascript" src="plugins/jquery-3.3.1.js"></script>
+=======
+  
+>>>>>>> 04625ef6c670fa3aae59741ecbce53c773be6a2d
 </head>
 <body>
 
@@ -30,8 +34,12 @@ include('plugins/connect.php');
            <a href="product.php">Today's Deals</a> |
            <a href="sell.php">Sell</a> |   
            <a href="#">Contact</a> |
+<<<<<<< HEAD
            <a href="#">FAQ</a> |
             <a href="support.php">Support</a>
+=======
+           <a href="#">FAQ</a>
+>>>>>>> 04625ef6c670fa3aae59741ecbce53c773be6a2d
 	       </div>
 	 	
          <div class="nav-top-rightpart">
@@ -52,11 +60,33 @@ include('plugins/connect.php');
       <a href="#"><img src="plugins/images/notifications_icon.png"></a>  
          <a href="#"><img src="plugins/images/messege.png"></a>  
           <a href="cart.php"><img src="plugins/images/cart.png"></a> 
+<<<<<<< HEAD
           <span id="cart_amount" style="background-color: #ff6700;
     color: #ffffff;
     border-radius: 5px;
     padding: 7px;
     font-size: 26px;"> </span>
+=======
+          <span style="background-color: #ff6700;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 26px;"> 
+            <?php
+          $sql="SELECT sum(quantity) as sum_qty FROM cart WHERE buyer_id=$buyer;";
+          $r=$conn->query($sql);
+          if($r-> num_rows > 0)
+            while ($row=$r-> fetch_assoc()) {
+              $cart_sum=$row['sum_qty'];
+              if($cart_sum !=null)
+              echo $cart_sum;
+            else
+              echo 0;
+            }
+            
+          ?>
+          </span>
+>>>>>>> 04625ef6c670fa3aae59741ecbce53c773be6a2d
          </div>
           
 	  </div>
@@ -362,7 +392,11 @@ include('plugins/connect.php');
 
 
       ?>
+<<<<<<< HEAD
          
+=======
+
+>>>>>>> 04625ef6c670fa3aae59741ecbce53c773be6a2d
 
            <div class="ad-post">
               <table>
@@ -375,6 +409,7 @@ include('plugins/connect.php');
                  </p></td></tr>
 
 
+<<<<<<< HEAD
                  <tr><td style="text-align: left;">
 
 
@@ -390,6 +425,10 @@ include('plugins/connect.php');
                <!--    <a style="padding: 10px;background-color: #ffbb3d;" href="process.php?p_id=<?php echo $p_id; ?>&qty=1&buyNow=0&page=index">Add to Cart</a> -->
                           <a style="padding: 10px;background-color: #514dff;color:white;" href="process.php?p_id=<?php echo $p_id; ?>&qty=1&buyNow=1">Buy Now</a></td></tr>
 
+=======
+                 <tr><td style="text-align: center;"><a style="padding: 10px;background-color: #ffbb3d;" href="process.php?p_id=<?php echo $p_id; ?>&qty=1&buyNow=0&page=index">Add to Cart</a>
+                          <a style="padding: 10px;background-color: #514dff;color:white;" href="process.php?p_id=<?php echo $p_id; ?>&qty=1&buyNow=1">Buy Now</a></td></tr>
+>>>>>>> 04625ef6c670fa3aae59741ecbce53c773be6a2d
                
               </table>
           </div>
@@ -450,7 +489,11 @@ include('plugins/connect.php');
 
 
 
+<<<<<<< HEAD
 
+=======
+<script src="plugins/myScript.js"></script>
+>>>>>>> 04625ef6c670fa3aae59741ecbce53c773be6a2d
 <script type="text/javascript">
   //Home Slider Start------------------>>>>
 
@@ -472,6 +515,9 @@ function showSlides() {
 
 //Home Slider End------------------<<<<<
 </script>
+<<<<<<< HEAD
 <script src="plugins/myScript.js"></script>
+=======
+>>>>>>> 04625ef6c670fa3aae59741ecbce53c773be6a2d
 </body>
 </html>

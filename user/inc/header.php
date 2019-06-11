@@ -9,15 +9,23 @@ include('plugins/connect.php');
       header("Location:../login/");
   }
 ?>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 04625ef6c670fa3aae59741ecbce53c773be6a2d
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Budget Mart</title>
 	
 	 <link rel="stylesheet" type="text/css" href="plugins/style.css">
+<<<<<<< HEAD
   <script type="text/javascript" src="plugins/jquery-3.3.1.slim.js"></script>
 <script type="text/javascript" src="plugins/jquery-3.3.1.js"></script>
 <script src="plugins/myScript.js"></script>
+=======
+  
+>>>>>>> 04625ef6c670fa3aae59741ecbce53c773be6a2d
 </head>
 <body>
 
@@ -31,12 +39,16 @@ include('plugins/connect.php');
            <a href="#">Today's Deals</a> |
            <a href="sell.php">Sell</a> |   
            <a href="#">Contact</a> |
+<<<<<<< HEAD
            <a href="#">FAQ</a> |  
             <a href="support.php">Support</a>
       
 
 
 
+=======
+           <a href="#">FAQ</a>
+>>>>>>> 04625ef6c670fa3aae59741ecbce53c773be6a2d
 	       </div>
 	 	
          <div class="nav-top-rightpart">
@@ -57,11 +69,33 @@ include('plugins/connect.php');
       <a href="#"><img src="plugins/images/notifications_icon.png"></a>  
          <a href="#"><img src="plugins/images/messege.png"></a>  
           <a href="cart.php"><img src="plugins/images/cart.png"></a>  
+<<<<<<< HEAD
           <span id="cart_amount" style="background-color: #ff6700;
     color: #ffffff;
     border-radius: 5px;
     padding: 7px;
     font-size: 26px;"> </span>
+=======
+          <span style="background-color: #ff6700;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 26px;"> 
+            <?php
+          $sql="SELECT sum(quantity) as sum_qty FROM cart WHERE buyer_id=$buyer;";
+          $r=$conn->query($sql);
+          if($r-> num_rows > 0)
+            while ($row=$r-> fetch_assoc()) {
+              $cart_sum=$row['sum_qty'];
+              if($cart_sum !=null)
+              echo $cart_sum;
+            else
+              echo 0;
+            }
+            
+          ?>
+          </span>
+>>>>>>> 04625ef6c670fa3aae59741ecbce53c773be6a2d
           
          </div>
           

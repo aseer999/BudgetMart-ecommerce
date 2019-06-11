@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 include("plugins/connect.php");
 
    $ticket_id=1902004;
 ?>
+=======
+>>>>>>> 04625ef6c670fa3aae59741ecbce53c773be6a2d
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,6 +29,7 @@ include("plugins/connect.php");
     color: #a00000;
   	}
   </style>
+<<<<<<< HEAD
   <link rel="stylesheet" type="text/css" href="plugins/style.css">
 
 <script type="text/javascript" src="plugins/jquery-3.3.1.js"></script>
@@ -107,6 +111,41 @@ setInterval(function(){
      }, 1000);
   
    });
+=======
+
+
+</head>
+<body>
+  <div class="pos-message">
+  	   Successfully uploaded! <br> Your Product is Now on sale!
+  	 </div>
+
+  	  <div class='neg-message'>
+  	   Successfully NOT uploaded! <br> Your Product is NoT on sale!
+  	 </div>
+
+   <div id="auto">
+     
+   </div>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+  $(document).ready( function() {
+     $('#auto').load('load.php');
+     refresh();
+  });
+
+
+
+  function refresh()
+  {
+     setTimeout( function()
+     {
+      $('#auto').fadOut('slow').load('load.php').fadeIn('slow');
+      refresh();
+
+     },200);
+  }
+>>>>>>> 04625ef6c670fa3aae59741ecbce53c773be6a2d
 </script>
 </body>
 </html>

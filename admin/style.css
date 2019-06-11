@@ -319,6 +319,7 @@ font-size: 25px;
 
 .closebtn:hover {
   color: black;
+<<<<<<< HEAD
 }
 
 /*TicketsTicketsTicketsTicketsTicketsTicketsTicketsTicketsTicketsTicketsTicketsTicketsTickets
@@ -424,4 +425,6 @@ background-color: #cef7ff;
     padding: 10px;
     overflow: auto;
     border: 1px solid #5e5f5f;
+=======
+>>>>>>> 04625ef6c670fa3aae59741ecbce53c773be6a2d
 }

@@ -7,7 +7,11 @@
           
       <?php
 
+<<<<<<< HEAD
       $sql="SELECT p_id,pic,p_title,p_details,price FROM product ";
+=======
+      $sql="SELECT p_id,pic,p_title,p_details,price FROM product ORDER BY RAND()";
+>>>>>>> 04625ef6c670fa3aae59741ecbce53c773be6a2d
      $r=$conn->query($sql);
  
    if($r->num_rows > 0)
