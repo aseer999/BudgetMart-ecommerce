@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Categories</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="full-page">
+    	 <div class="header">
+    	 	        <h1> Admin Panel</h1> 
+                    <a class="logout" href="../plugins/process.php?logout=1">log Out</a>
+                    <div class="h-content">
+                        <input type="text" name="search" placeholder="User's name / Category / Order_ID/Any Product">
+                    <select style="    width: 100px;
+    height: 41px;">
+                        <option  value="Users">Users</option>
+                        <option value="Categories">Categories</option>
+                        <option value="Order_ID">Order_ID</option>
+                        <option value="Products">Products</option>
+                    </select>
+                    <input type="submit" name="search"> 
+                  
+                    </div>
+                    
+    	 </div>
+    	 <div class="side-nav">
+    	 	
+    	 	    <ul>
+                  <li style="margin-top: 130px;"> <a href="#">Users</a>  </li>     
+                   <li><a href="#">Categories</a></li>
+                   <li><a href="#">Orders</a> </li>
+                  <li> <a href="#">All Products</a> </li>
+                  <li><a href="#">Change Password</a> </li>
+                </ul>
+    	 	  	  
+    	 	  	   
+    	 	  	   
+    	 	  	  
+    	 	  
+    	 </div>
+    	 <div class="section">
+    	 	            <div class="cat-view">
+    	 	            	<h2 style="text-align: center;">Categories</h2>
+    	 	            	<div class="cat-tab">
+    	 	            		<table>
+    	 	            		 <tr>
+    	 	            		 	<th>Category Name</th><th>Action</th>
+    	 	            		 </tr>
+    	 	            		
+
+
+
+                                 <tr><td><a href="#">one</a></td> <td> <input type="submit" name="del_cat" value="Delete"> <input type="submit" name="edit_cat" value="Edit"></td></tr>
+    	 	            		
+
+
+
+                                
+    	 	            	</table>
+    	 	            	</div>
+    	 	            	<input style="margin-top: 8px;" type="text" name="add-cat">
+    	 	            	<input type="submit" name="add-cat" value="Add">
+    	 	            </div>
+    	 	            <div class="sub-cat">
+    	 	            	<h2 style="text-align: center;">Sub-Categories of<span style="color: blue;font-weight: bold;"> Fashion </span> </h2>
+    	 	            	<div class="cat-tab">
+    	 	            		<table>
+    	 	            		 <tr>
+    	 	            		 	<th>Sub-Category Name</th><th>Action</th>
+    	 	            		 </tr>
+    	 	            		<tr><td><a href="#">one</a></td> <td> <input type="submit" name="del_cat" value="Delete"> <input type="submit" name="edit_cat" value="Edit"></td></tr>
+    	 	            		 
+    	 	            		
+    	 	            		
+    	 	            	</table>
+    	 	            	</div>
+    	 	            	<input style="margin-top: 8px;" type="text" name="add-cat">
+    	 	            	<input type="submit" name="add-cat" value="Add">
+    	 	            </div>
+    	 	            <div class="icon-pic">
+    	 	            		<h2 style="text-align: center;">Category Images of<span style="color: blue;font-weight: bold;"> Fashion </span> </h2>
+    	 	            	  <table>
+    	 	            	  	<tr>
+    	 	            	  		<th>Icon</th> <th>Picture</th>
+    	 	            	  	</tr>
+                                <tr><td>NO icon</td><td>NO Picture</td></tr>
+    	 	            	  	<tr><td><input type="submit" name="del_cat" value="Delete"></td> <td><input type="submit" name="edit_cat" value="Edit"> </td> </tr>
+    	 	            	  </table>
+    	 	            </div>
+                    
+
+
+
+    	 </div>
+    	 <div class="footer">
+    	 	
+    	 </div>
+    </div>
+</body>
+</html>

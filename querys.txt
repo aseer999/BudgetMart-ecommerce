@@ -1,0 +1,4 @@
+category query
+
+SELECT DISTINCT(cat_name),cat_icon,cat_pic
+ FROM category WHERE cat_icon!='null' AND cat_pic!='null'
