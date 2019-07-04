@@ -8,14 +8,13 @@ var span = document.getElementsByClassName("close")[0];
 
 
 
-<<<<<<< HEAD
-=======
+
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
 
->>>>>>> 04625ef6c670fa3aae59741ecbce53c773be6a2d
+
 
 
 
@@ -28,7 +27,7 @@ for (i = 0; i < close.length; i++) {
     div.style.opacity = "0";
     setTimeout(function(){ div.style.display = "none"; }, 600);
   }
-<<<<<<< HEAD
+
 }
 
 
@@ -69,6 +68,6 @@ setInterval(function(){
 
   
    });
-=======
-}
->>>>>>> 04625ef6c670fa3aae59741ecbce53c773be6a2d
+
+
+

@@ -43,12 +43,5 @@ include("inc/header.php");
 
 <?php
 include("inc/footer.php");
-<<<<<<< HEAD
 ?>
 
-
-
-
-=======
-?>
->>>>>>> 04625ef6c670fa3aae59741ecbce53c773be6a2d

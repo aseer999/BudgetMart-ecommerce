@@ -12,11 +12,10 @@ include("../plugins/connect.php");
 <head>
 	<title>Categories</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-<<<<<<< HEAD
+
    <script type="text/javascript" src="jquery-3.3.1.slim.js"></script>
 <script type="text/javascript" src="jquery-3.3.1.js"></script>
-=======
->>>>>>> 04625ef6c670fa3aae59741ecbce53c773be6a2d
+
 </head>
 <body>
     <div class="full-page">
@@ -45,10 +44,9 @@ include("../plugins/connect.php");
                    <li><a href="orders.php">Orders</a> </li>
                   <li> <a href="products.php">All Products</a> </li>
                   <li><a href="changePassword.php">Change Password</a> </li>
-<<<<<<< HEAD
+
                   <li><a href="tickets.php">Tickets</a> </li>
-=======
->>>>>>> 04625ef6c670fa3aae59741ecbce53c773be6a2d
+
                 </ul>
     	 	  	  
     	 	  	   

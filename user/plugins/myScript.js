@@ -16,7 +16,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-<<<<<<< HEAD
+
 // Side Navigation END ------------------>>
 
 
@@ -93,6 +93,6 @@ setInterval(function(){
   //add to cart <------------------
 
 
-=======
+
 // Side Navigation END ------------------>>
->>>>>>> 04625ef6c670fa3aae59741ecbce53c773be6a2d
+
